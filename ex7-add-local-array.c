@@ -2,8 +2,6 @@
 //
 #include <stdio.h>
 
-
-
 int arraysum(int arr[], int length) {
 
    int i;
