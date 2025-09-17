@@ -72,12 +72,12 @@ main:
     sw $31,16($29)
 
     la $a0,msg1
-    jalr printmsg
+    jal printmsg
 
-    jalr readint
+    jal readint
     sw $v0,8($sp)
 
-    jalr readint
+    jal readint
     sw $v0,12($sp)
 
 $L4:
@@ -100,18 +100,18 @@ $L2:
     div $8,$9     # hi is the result of mod and low has the integer divison
     mflo $a1
     la   $a0,msg2
-    jalr printresult
+    jal printresult
     mfhi $a1
     la   $a0,msg3
-    jalr printresult
+    jal printresult
 
     la $a0,msg1
-    jalr printmsg
+    jal printmsg
 
-    jalr readint
+    jal readint
     sw $v0,8($sp)
 
-    jalr readint
+    jal readint
     sw $v0,12($sp)
 
     b $L4 # beginning of the loop

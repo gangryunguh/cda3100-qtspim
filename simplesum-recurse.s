@@ -18,7 +18,7 @@ partialsum:
     bne $8,$0,$L1
     # i >= 2, we need to recurse
     addi $a0,$a0,-1
-    jalr partialsum
+    jal partialsum
 
     sw $v0,0($29)
 
@@ -53,7 +53,7 @@ main:
     sw $31,4($29)
 
     li $a0, 20
-    jalr partialsum
+    jal partialsum
 
     sw $v0,0($29)
 
