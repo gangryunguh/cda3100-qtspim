@@ -1,9 +1,10 @@
     .data
+    .align 2
 garray:   .word    1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 prompt:   .asciiz  "sum = "
 newline:  .asciiz  "\n"
-    .align 2
     .text
+    .align 2
     .globl arraysum
 arraysum:
     # function prolog

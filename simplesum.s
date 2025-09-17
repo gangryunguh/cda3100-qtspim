@@ -1,8 +1,10 @@
-   .data
+    .data
+    .align 2
 prompt1: .asciiz "The sum of the first 10 natural numbers is: "
 newline: .asciiz "\n"
-    .align 2
+
     .text
+    .align 2
     .globl main
 main:
     # allocate activation record for local variables and other

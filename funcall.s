@@ -1,9 +1,11 @@
     .data
+    .align 2
 array:    .word    0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 prompt:   .asciiz  "x = "
 newline:  .asciiz  "\n"
-    .align 2
+
     .text
+    .align 2
     .globl bar
 bar:
     addiu $sp,$sp,-4  # 4 bytes in M[$sp] for local variable 'x'

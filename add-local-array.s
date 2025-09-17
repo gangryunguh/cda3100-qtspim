@@ -1,8 +1,9 @@
     .data
+    .align 2
 prompt:   .asciiz  "sum = "
 newline:  .asciiz  "\n"
-    .align 2
     .text
+    .align 2
     .globl arraysum
 arraysum:
     # function prolog

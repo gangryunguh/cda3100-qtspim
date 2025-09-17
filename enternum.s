@@ -1,8 +1,10 @@
     .data
+    .align 2
 prompt1: .asciiz "Enter an integer: "
 prompt2: .asciiz "The number you typed is = "
 newline: .asciiz "\n"
     .text
+    .align 2
     .globl main
 main:
     # allocate activation record for local variables and other
