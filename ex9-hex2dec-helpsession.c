@@ -17,21 +17,8 @@ int hextodec(char *s) {
    int length = 0;
    int digit;
 
-  for (t = *s; t; s++,t = *s) {
-      if (t > 'f') {
-         invalid = 1;
-         break;
-      }
-      if (t == '\n')
-         return total;
-      if (length >= 8) {
-         invalid = 1;
-         break;
-      }
-      if (t >= 'a')
-         digit = t - 'a' + 10;
-      else
-         digit = t - '0';
+   for (t = *s; t; s++,t = *s) {
+      digit = t - '0';
       total = total*16 + digit;
       length++;
    }
