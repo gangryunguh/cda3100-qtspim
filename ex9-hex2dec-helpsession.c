@@ -17,7 +17,7 @@ int hextodec(char *s) {
    int length = 0;
    int digit;
 
-   for (t = *s; t; s++,t = *s) {
+   for (t = *s; t != '\n'; s++,t = *s) {
       digit = t - '0';
       total = total*16 + digit;
       length++;
