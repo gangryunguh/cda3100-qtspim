@@ -1,6 +1,7 @@
     .data
     .align 2
 hexstring: .byte      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+invalid:   .word      0
 prompt1:   .asciiz    "Enter a hexadecimal value.\n"
 prompt2:   .asciiz    "The hexadecimal number entered is invalid: 0x"
 prompt3:   .asciiz    "The hexadecimal number entered is the decimal value: "
