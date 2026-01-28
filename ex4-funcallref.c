@@ -7,7 +7,7 @@ int array[10] = { 0 };
 void bar(int *a, int b, int c) {
    int x;
    x = *a+b+c;
-   x += 6;
+   x += 6; // x = x+6
    *a = x;
    return;
 }

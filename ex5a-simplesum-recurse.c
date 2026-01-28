@@ -19,7 +19,7 @@ int main() {
    //for (i = 1; i <= 10; i++) {
    //   sum += i; // Add the current number to the sum
    //}
-   sum = partialsum(20);
+   sum = partialsum(10);
    printf("The sum of the first 10 natural numbers is: %d\n", sum);
    return 0;
 }
