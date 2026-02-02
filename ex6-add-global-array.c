@@ -8,7 +8,7 @@ int arraysum(int arr[], int length) {
 
    int i;
    int sum = 0;
-   if (length > 0) {
+   if (length >= 0) {
       for (i = 0; i < length; i++)
          sum = sum + arr[i];
    }
@@ -18,4 +18,5 @@ int arraysum(int arr[], int length) {
 int main() {
    int sum = arraysum(garray,10);
    printf("sum = %d\n", sum);
+   return 0;
 }
